@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: "Courier New", Courier, monospace;
+}
+
+:root {
+    --mainColor: #000000;
+    --mainColorLight: #000000;
+    --secondaryColor: #000000;
+    --textColor: #eee;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+
+nav a {
+    margin: 0 2rem;
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--secondaryColor);
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menu li {
+    margin: 0 1rem;
+    list-style: none;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navbar-menu a:hover {
+    color: #ccc;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
