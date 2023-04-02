@@ -2,34 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: 0;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 :root {
-    --mainColor: #000000;
+    --mainColor: #68ffc069;
     --mainColorLight: #000000;
-    --secondaryColor: #000000;
-    --textColor: #eee;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    padding: 0 2rem;
-    background-color: var(--mainColor);
-    color: var(--textColor);
-}
-
-nav a {
-    margin: 0 2rem;
-    color: var(--textColor);
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: var(--secondaryColor);
+    --secondaryColor: #1d4434bb;
+    --textColor: #000000;
 }
 
 .navbar-menu {
@@ -38,30 +18,26 @@ nav a:hover {
     align-items: center;
 }
 
-.navbar-menu li {
-    margin: 0 1rem;
-    list-style: none;
-}
-
 .navbar-menu a {
-    color: white;
+    margin: 0 2rem;
+    color: var(--textColor);
     text-decoration: none;
     font-size: 1.2rem;
 }
 
 .navbar-menu a:hover {
-    color: #ccc;
+    color: var(--secondaryColor);
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    background-color: #333;
-    color: white;
+    background-color: var(--mainColor);
+    color: var(--textColor);
     padding: 1rem;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 98%; /*No me estoy dando cuenta por qué se desborda en 100*/
     z-index: 999;
 }
