@@ -1,0 +1,15 @@
+.ItemImg {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.CardItem {
+    background-color: aquamarine;
+    width: fit-content;
+    padding: 10px;
+    border: 2px var(--secondaryColor) solid;
+    border-radius: 3%;
+    margin-right: 10px;
+}

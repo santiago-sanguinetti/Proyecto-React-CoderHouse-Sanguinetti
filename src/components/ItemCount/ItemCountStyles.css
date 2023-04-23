@@ -1,0 +1,10 @@
+.Controls {
+    display: flex;
+}
+
+.Button {
+    margin: 0 5px 0 5px;
+    padding: 5px 10px 5px 10px;
+    background-color: var(--mainColorLight);
+    border-radius: 10%;
+}

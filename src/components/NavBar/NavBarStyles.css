@@ -7,28 +7,35 @@
 
 :root {
     --mainColor: #68ffc069;
-    --mainColorLight: #000000;
+    --mainColorLight: #ceffeb;
     --secondaryColor: #1d4434bb;
+    --highlightColor: #115e4d;
     --textColor: #000000;
+    --linkColor: #0066ff;
 }
 
-.navbar-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Logo {
+    text-decoration: none;
+    color: var(--highlightColor);
+    font-size: larger;
 }
 
-.navbar-menu a {
+.Option,
+.ActiveOption {
     margin: 0 2rem;
-    color: var(--textColor);
+    color: var(--linkColor);
     text-decoration: none;
     font-size: 1.2rem;
 }
 
-.navbar-menu a:hover {
+.Option:hover {
     color: var(--secondaryColor);
 }
 
+.ActiveOption {
+    color: var(--highlightColor);
+    font-weight: bold;
+}
 .navbar {
     display: flex;
     justify-content: flex-start;
@@ -38,6 +45,6 @@
     padding: 1rem;
     position: fixed;
     top: 0;
-    width: 98%; /*No me estoy dando cuenta por qué se desborda en 100*/
+    width: 100%;
     z-index: 999;
 }
