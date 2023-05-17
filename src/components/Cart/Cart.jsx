@@ -19,7 +19,7 @@ const Cart = () => {
     }
 
     return (
-        <div>
+        <div className="cart">
             {cart.map((p) => (
                 <CartItem key={p.id} {...p} />
             ))}
