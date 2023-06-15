@@ -1,7 +1,8 @@
 import "./NavBarStyles.css";
 import CartWidget from "./CartWidget/CartWidget";
 import { NavLink, Link } from "react-router-dom";
-const Navbar = () => {
+import { memo } from "react";
+const Navbar = memo(() => {
     return (
         <header>
             <nav className="navbar">
@@ -39,6 +40,6 @@ const Navbar = () => {
             </nav>
         </header>
     );
-};
+});
 
 export default Navbar;

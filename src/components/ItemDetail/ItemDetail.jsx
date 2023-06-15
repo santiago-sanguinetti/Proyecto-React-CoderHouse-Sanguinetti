@@ -1,10 +1,17 @@
-import "./ItemDetailStyles.css";
 import ItemCount from "../ItemCount/ItemCount";
 import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 
-const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
+const ItemDetail = ({
+    id,
+    nombre,
+    img,
+    categoria,
+    descripcion,
+    precio,
+    stock,
+}) => {
     const [quantityAdded, setQuantityAdded] = useState(0);
 
     const { addItem } = useContext(CartContext);
@@ -14,8 +21,8 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
 
         const item = {
             id,
-            name,
-            price,
+            nombre,
+            precio,
         };
 
         addItem(item, quantity);
@@ -24,38 +31,24 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
     return (
         <article className="CardItem">
             <header className="Header">
-                <h2 className="ItemHeader">{name}</h2>
+                <h2 className="ItemHeader">{nombre}</h2>
             </header>
             <picture>
-                <img src={img} alt={name} className="ItemImg" />
+                <img src={img} alt={nombre} className="ItemImg" />
             </picture>
             <section>
-                <p className="Info">Categoría: {category}</p>
-                <p className="Info">Descripción: {description}</p>
-                <p className="Info">Precio: ${price}</p>
+                <p className="Info">Categoría: {categoria}</p>
+                <p className="Info">Descripción: {descripcion}</p>
+                <p className="Info">Precio: ${precio}</p>
             </section>
             <footer className="ItemFooter">
-                {
-                    quantityAdded > 0 ? (
-                        <Link to="/cart" className="Option">
-                            Finalizar compra
-                        </Link>
-                    ) : (
-                        <ItemCount
-                            initial={1}
-                            stock={stock}
-                            onAdd={handleOnAdd}
-                        />
-                    )
-
-                    /* <ItemCount
-                    initial={1}
-                    stock={stock}
-                    onAdd={(quantity) =>
-                        console.log("Cantidad agregada ", quantity)
-                    }
-                /> */
-                }
+                {quantityAdded > 0 ? (
+                    <Link to="/cart" className="Option">
+                        Finalizar compra
+                    </Link>
+                ) : (
+                    <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
+                )}
             </footer>
         </article>
     );
