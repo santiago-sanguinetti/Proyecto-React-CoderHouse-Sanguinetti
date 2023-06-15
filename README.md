@@ -53,7 +53,7 @@ Este proyecto es un eCommerce desarrollado en React, que permite a los usuarios 
 
 ## Contribuciones
 
-Las contribuciones son bienvenidas. Si tienes alguna sugerencia, mejora o corrección de errores, por favor crea un nuevo [Issue](https://github.com/tu-usuario/ecommerce/issues) o envía un [Pull Request](https://github.com/tu-usuario/ecommerce/pulls).
+Las contribuciones son bienvenidas. Si tienes alguna sugerencia, mejora o corrección de errores, por favor crea un nuevo [Issue](https://github.com/santiago-sanguinetti/Proyecto-React-CoderHouse-Sanguinetti/issues) o envía un [Pull Request](https://github.com/santiago-sanguinetti/Proyecto-React-CoderHouse-Sanguinetti/pulls).
 
 ## Contacto
 
